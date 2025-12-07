@@ -136,7 +136,7 @@
     document.querySelectorAll("img").forEach((img) => {
       if (!img.hasAttribute("loading")) img.setAttribute("loading", "lazy");
       if (!img.getAttribute("alt") || img.getAttribute("alt").trim() === "") {
-        img.setAttribute("alt", "4L Studio photo");
+        img.setAttribute("alt", "Love Studio photo");
       }
     });
 
@@ -247,7 +247,7 @@
             !img.getAttribute("alt") ||
             img.getAttribute("alt").trim() === ""
           ) {
-            img.setAttribute("alt", "4L Studio gallery photo");
+            img.setAttribute("alt", "Love Studio gallery photo");
           }
           // ensure correct sizing attributes for responsive images
           img.style.width = "100%";
