@@ -14,10 +14,15 @@
   // Initiate the wowjs
   new WOW().init();
 
+  
+
   // Navbar on scrolling
+
   $(window).scroll(function () {
-    if ($(this).scrollTop() > 300) {
-      $(".navbar").fadeIn("slow").css("display", "flex");
+    if ($(this).scrollTop() > 50) {
+      $("#custom-navbar").addClass("fixed-top");
+    } else {
+      $("#custom-navbar").removeClass("fixed-top");
     }
   });
 
