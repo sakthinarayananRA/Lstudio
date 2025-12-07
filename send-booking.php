@@ -1,4 +1,5 @@
 <?php
+
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
@@ -7,8 +8,8 @@ require __DIR__ . '/phpmailer/PHPMailer.php';
 require __DIR__ . '/phpmailer/SMTP.php';
 
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
-    http_response_code(405);
-    exit('Method not allowed');
+  http_response_code(405);
+  exit('Method not allowed');
 }
 
 // collect inputs
@@ -27,44 +28,44 @@ $details  = htmlspecialchars(trim($_POST['details'] ?? ''));
 $mail = new PHPMailer(true);
 
 try {
-    // Gmail SMTP
-    $mail->isSMTP();
-    $mail->Host       = 'smtp.gmail.com';
-    $mail->SMTPAuth   = true;
-    $mail->Username   = 'gokul5257kk@gmail.com';        // your Gmail
-    $mail->Password   = 'Kavi7871288';       // Gmail App Password
-    $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
-    $mail->Port       = 587;
+  // Gmail SMTP
+  $mail->isSMTP();
+  $mail->Host       = 'smtp.gmail.com';
+  $mail->SMTPAuth   = true;
+  $mail->Username   = 'lovestudio.trichy@gmail.com';        // your Gmail
+  $mail->Password   = 'Lovestudiolalgudi999.';       // Gmail App Password
+  $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+  $mail->Port       = 587;
 
-    // From must be your Gmail
-    $mail->setFrom('gokul5257kk@gmail.com', 'KMo Infotech Bookings');
-    if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        $mail->addReplyTo($email, $name);
-    }
+  // From must be your Gmail
+  $mail->setFrom('lovestudio.trichy@gmail.com', 'KMo Infotech Bookings');
+  if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
+    $mail->addReplyTo($email, $name);
+  }
 
-    // Receiver
-    $mail->addAddress('gokul5257kk@gmail.com');
-    $mail->Subject = "New Booking: {$name} — {$event} on {$date}";
+  // Receiver
+  $mail->addAddress('lovestudio.trichy@gmail.com');
+  $mail->Subject = "New Booking: {$name} — {$event} on {$date}";
 
-    // Body
-    $body  = "Booking Details:\n\n";
-    $body .= "Name: {$name}\n";
-    $body .= "Email: {$email}\n";
-    $body .= "Phone: {$phone}\n";
-    $body .= "City: {$city}\n";
-    $body .= "Event: {$event}\n";
-    $body .= "Date: {$date}\n";
-    $body .= "Time: {$time}\n";
-    $body .= "Location: {$location}\n";
-    $body .= "Venue: {$venue}\n";
-    $body .= "Crowd Strength: {$crowd}\n\n";
-    $body .= "Details:\n{$details}\n";
+  // Body
+  $body  = "Booking Details:\n\n";
+  $body .= "Name: {$name}\n";
+  $body .= "Email: {$email}\n";
+  $body .= "Phone: {$phone}\n";
+  $body .= "City: {$city}\n";
+  $body .= "Event: {$event}\n";
+  $body .= "Date: {$date}\n";
+  $body .= "Time: {$time}\n";
+  $body .= "Location: {$location}\n";
+  $body .= "Venue: {$venue}\n";
+  $body .= "Crowd Strength: {$crowd}\n\n";
+  $body .= "Details:\n{$details}\n";
 
-    $mail->Body = $body;
-    $mail->send();
+  $mail->Body = $body;
+  $mail->send();
 
-    // ✅ Success Page
-    echo "
+  // ✅ Success Page
+  echo "
     <html>
     <head>
       <title>Booking Successful</title>
@@ -86,11 +87,8 @@ try {
     </body>
     </html>";
 } catch (Exception $e) {
-
-  var_dump($e);
-  exit();
-    // ❌ Error Page
-    echo "
+  // ❌ Error Page
+  echo "
     <html>
     <head>
       <title>Booking Failed</title>
@@ -112,4 +110,3 @@ try {
     </body>
     </html>";
 }
-?>
