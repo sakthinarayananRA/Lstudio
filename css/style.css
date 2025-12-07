@@ -21,6 +21,12 @@
   margin: 0;
   padding: 0;
 }
+html, body {
+  height: 100%;
+  overflow-x: hidden;
+  /* overflow: hidden; Remove scroll */
+}
+
 body {
   font-family: "Poppins", Arial, sans-serif;
   line-height: 1.6;
@@ -841,7 +847,7 @@ section,
 /* Hero Slider - Ensure consistent image sizing */
 #heroSlider {
   height: 100vh;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 #heroSlider .carousel-inner {
@@ -862,6 +868,19 @@ section,
   display: block;
 }
 
+
 .hero-slider-fullscreen {
   height: 100vh !important;
+}
+
+@media (max-width: 768px) {
+  #heroSlider {
+    height: 100vh;
+  }
+
+  #heroSlider img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 }
