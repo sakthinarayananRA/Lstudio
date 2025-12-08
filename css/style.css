@@ -748,4 +748,28 @@ section,
   }
 }
 
-/* Hero Slider - Ensure consistent image sizing */
+
+
+@media (min-width: 768px) {
+  .carousel-img-desktop {
+    height: 100vh !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .carousel-img-mobile {
+    height: auto !important;
+  }
+}
+
+.service-img {
+  width: 100%;
+  background: #000;
+  object-fit: contain;
+}
+
+@media (min-width: 992px) {
+  .service-img {
+    height: 80vh;
+  }
+}
