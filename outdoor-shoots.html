@@ -34,7 +34,12 @@
     <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
 
     <!-- Customized Bootstrap Stylesheet -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet" />
@@ -52,54 +57,51 @@
 
     <!-- Navbar Start -->
     <nav
-        class="navbar navbar-expand-lg shadow-sm py-lg-0 px-4 px-lg-5 custom-navbar"
-        id="custom-navbar"
+      class="navbar navbar-expand-lg shadow-sm py-lg-0 px-4 px-lg-5 custom-navbar"
+      id="custom-navbar"
+    >
+      <a href="index.html" class="navbar-brand">
+        <img
+          src="img/logo.png"
+          class="img-fluid navbar-logo"
+          alt="Love Studio Logo"
+        />
+      </a>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarCollapse"
       >
-       
-         <a href="index.html" class="navbar-brand">
-          <img src="img/logo.png" class="img-fluid navbar-logo" alt="Love Studio Logo" />
-        </a> 
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-      
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarCollapse"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+      <div
+        class="collapse navbar-collapse justify-content-end"
+        id="navbarCollapse"
+      >
+        <div class="navbar-nav ms-auto py-0 align-items-lg-center">
+          <a href="#index" class="nav-item nav-link active">Home</a>
+          <a href="about.html" class="nav-item nav-link">About Us</a>
+          <a href="service.html" class="nav-item nav-link">Our Services</a>
+          <a href="careers-jobs.html" class="nav-item nav-link">Job Apply</a>
+          <a href="book-us-now.html" class="nav-item nav-link">Contact Us</a>
 
-       
-        <div
-          class="collapse navbar-collapse justify-content-end"
-          id="navbarCollapse"
-        >
-          <div class="navbar-nav ms-auto py-0 align-items-lg-center">
-            <a href="#index" class="nav-item nav-link active">Home</a>
-            <a href="about.html" class="nav-item nav-link">About Us</a>
-            <a href="service.html" class="nav-item nav-link">Our Services</a>
-            <a href="careers-jobs.html" class="nav-item nav-link">Job Apply</a>
-            <a href="book-us-now.html" class="nav-item nav-link">Contact Us</a>
+          <a href="book-us-now.html" class="btn btn-primary enquiry-btn ms-lg-3"
+            >Enquiry</a
+          >
 
-            
-            <a
-              href="book-us-now.html"
-              class="btn btn-primary enquiry-btn ms-lg-3"
-              >Enquiry</a
-            >
-
-            
-            <a
-              href="https://wa.me/919788180713"
-              target="_self"
-              class="btn btn-success whatsapp-btn ms-lg-3"
-            >
-              <i class="fab fa-whatsapp mx-2"></i> WhatsApp
-            </a>
-          </div>
+          <a
+            href="https://wa.me/919788180713"
+            target="_self"
+            class="btn btn-success whatsapp-btn ms-lg-3"
+          >
+            <i class="fab fa-whatsapp mx-2"></i> WhatsApp
+          </a>
         </div>
-      </nav> 
+      </div>
+    </nav>
     <!-- Navbar End -->
 
     <!-- Navbar End -->
@@ -158,110 +160,313 @@
           <h3>Our Works</h3>
           <h5>Discover Our Unique And Creative Outdoor Shoots</h5>
         </div>
-        <div id="GalleryCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2500">
-      
-          <div class="carousel-indicators">
-            <!-- 15 slides -->
-            <button type="button" data-bs-target="#GalleryCarousel" data-bs-slide-to="0" class="active"></button>
-            <button type="button" data-bs-target="#GalleryCarousel" data-bs-slide-to="1"></button>
-            <button type="button" data-bs-target="#GalleryCarousel" data-bs-slide-to="2"></button>
-            <button type="button" data-bs-target="#GalleryCarousel" data-bs-slide-to="3"></button>
-            <button type="button" data-bs-target="#GalleryCarousel" data-bs-slide-to="4"></button>
-            <button type="button" data-bs-target="#GalleryCarousel" data-bs-slide-to="5"></button>
-            <button type="button" data-bs-target="#GalleryCarousel" data-bs-slide-to="6"></button>
-            <button type="button" data-bs-target="#GalleryCarousel" data-bs-slide-to="7"></button>
-            <button type="button" data-bs-target="#GalleryCarousel" data-bs-slide-to="8"></button>
-            <button type="button" data-bs-target="#GalleryCarousel" data-bs-slide-to="9"></button>
-            <button type="button" data-bs-target="#GalleryCarousel" data-bs-slide-to="10"></button>
-            <button type="button" data-bs-target="#GalleryCarousel" data-bs-slide-to="11"></button>
-            <button type="button" data-bs-target="#GalleryCarousel" data-bs-slide-to="12"></button>
-            <button type="button" data-bs-target="#GalleryCarousel" data-bs-slide-to="13"></button>
-            <button type="button" data-bs-target="#GalleryCarousel" data-bs-slide-to="14"></button>
+        <div class="row g-3">
+          <div class="col-lg-12 col-md-12 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="row g-3">
+              <div class="col-12">
+                <div class="project-item">
+                  <a
+                    href="img/OutdoorShoots/01.jpg"
+                    data-lightbox="gallery-OutdoorShoots"
+                    class="gallery-link"
+                    ><img
+                      class="img-fluid"
+                      src="img/OutdoorShoots/01.jpg"
+                      alt=""
+                  /></a>
+                </div>
+              </div>
+            </div>
           </div>
-      
-          <!-- Slides -->
-          <div class="carousel-inner">
-      
-            <div class="carousel-item active">
-              <img src="img/Galaryimage/02b.jpg" class="carousel-img-desktop d-none d-md-block w-100 object-fit-contain bg-dark" alt="">
-              <img src="img/Galaryimage/02b.jpg" class="carousel-img-mobile d-block d-md-none w-100 object-fit-cover" alt="">
+          <div class="col-lg-12 col-md-12 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="row g-3">
+              <div class="col-12">
+                <div class="project-item">
+                  <a
+                    href="img/OutdoorShoots/02.jpg"
+                    data-lightbox="gallery-OutdoorShoots"
+                    class="gallery-link"
+                    ><img
+                      class="img-fluid"
+                      src="img/OutdoorShoots/02.jpg"
+                      alt=""
+                  /></a>
+                </div>
+              </div>
             </div>
-      
-            <div class="carousel-item">
-              <img src="img/Galaryimage/038.jpg" class="carousel-img-desktop d-none d-md-block w-100 object-fit-contain bg-dark" alt="">
-              <img src="img/Galaryimage/038.jpg" class="carousel-img-mobile d-block d-md-none w-100 object-fit-cover" alt="">
-            </div>
-      
-            <div class="carousel-item">
-              <img src="img/Galaryimage/047.jpg" class="carousel-img-desktop d-none d-md-block w-100 object-fit-contain bg-dark" alt="">
-              <img src="img/Galaryimage/047.jpg" class="carousel-img-mobile d-block d-md-none w-100 object-fit-cover" alt="">
-            </div>
-      
-            <div class="carousel-item">
-              <img src="img/Galaryimage/FSDFS.jpg" class="carousel-img-desktop d-none d-md-block w-100 object-fit-contain bg-dark" alt="">
-              <img src="img/Galaryimage/FSDFS.jpg" class="carousel-img-mobile d-block d-md-none w-100 object-fit-cover" alt="">
-            </div>
-      
-            <div class="carousel-item">
-              <img src="img/Galaryimage/LOV00829.jpg" class="carousel-img-desktop d-none d-md-block w-100 object-fit-contain bg-dark" alt="">
-              <img src="img/Galaryimage/LOV00829.jpg" class="carousel-img-mobile d-block d-md-none w-100 object-fit-cover" alt="">
-            </div>
-      
-            <div class="carousel-item">
-              <img src="img/Galaryimage/LOV04883.jpg" class="carousel-img-desktop d-none d-md-block w-100 object-fit-contain bg-dark" alt="">
-              <img src="img/Galaryimage/LOV04883.jpg" class="carousel-img-mobile d-block d-md-none w-100 object-fit-cover" alt="">
-            </div>
-      
-            <div class="carousel-item">
-              <img src="img/Galaryimage/LOV09048.jpg" class="carousel-img-desktop d-none d-md-block w-100 object-fit-contain bg-dark" alt="">
-              <img src="img/Galaryimage/LOV09048.jpg" class="carousel-img-mobile d-block d-md-none w-100 object-fit-cover" alt="">
-            </div>
-      
-            <div class="carousel-item">
-              <img src="img/Galaryimage/LVE05188.jpg" class="carousel-img-desktop d-none d-md-block w-100 object-fit-contain bg-dark" alt="">
-              <img src="img/Galaryimage/LVE05188.jpg" class="carousel-img-mobile d-block d-md-none w-100 object-fit-cover" alt="">
-            </div>
-      
-            <div class="carousel-item">
-              <img src="img/Galaryimage/LVE06276.jpg" class="carousel-img-desktop d-none d-md-block w-100 object-fit-contain bg-dark" alt="">
-              <img src="img/Galaryimage/LVE06276.jpg" class="carousel-img-mobile d-block d-md-none w-100 object-fit-cover" alt="">
-            </div>
-      
-            <div class="carousel-item">
-              <img src="img/Galaryimage/LVE09295.jpg" class="carousel-img-desktop d-none d-md-block w-100 object-fit-contain bg-dark" alt="">
-              <img src="img/Galaryimage/LVE09295.jpg" class="carousel-img-mobile d-block d-md-none w-100 object-fit-cover" alt="">
-            </div>
-      
-            <div class="carousel-item">
-              <img src="img/Galaryimage/LVE09346.jpg" class="carousel-img-desktop d-none d-md-block w-100 object-fit-contain bg-dark" alt="">
-              <img src="img/Galaryimage/LVE09346.jpg" class="carousel-img-mobile d-block d-md-none w-100 object-fit-cover" alt="">
-            </div>
-      
-            <div class="carousel-item">
-              <img src="img/Galaryimage/LVE09433.jpg" class="carousel-img-desktop d-none d-md-block w-100 object-fit-contain bg-dark" alt="">
-              <img src="img/Galaryimage/LVE09433.jpg" class="carousel-img-mobile d-block d-md-none w-100 object-fit-cover" alt="">
-            </div>
-      
-            <div class="carousel-item">
-              <img src="img/Galaryimage/LVE094332.jpg" class="carousel-img-desktop d-none d-md-block w-100 object-fit-contain bg-dark" alt="">
-              <img src="img/Galaryimage/LVE094332.jpg" class="carousel-img-mobile d-block d-md-none w-100 object-fit-cover" alt="">
-            </div>
-      
-            <div class="carousel-item">
-              <img src="img/Galaryimage/LVE094662.jpg" class="carousel-img-desktop d-none d-md-block w-100 object-fit-contain bg-dark" alt="">
-              <img src="img/Galaryimage/LVE094662.jpg" class="carousel-img-mobile d-block d-md-none w-100 object-fit-cover" alt="">
-            </div>
-      
           </div>
-      
-          <!-- Controls -->
-          <button class="carousel-control-prev" type="button" data-bs-target="#GalleryCarousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#GalleryCarousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          </button>
-      
+          <div class="col-lg-12 col-md-12 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="row g-3">
+              <div class="col-12">
+                <div class="project-item">
+                  <a
+                    href="img/OutdoorShoots/03.jpg"
+                    data-lightbox="gallery-OutdoorShoots"
+                    class="gallery-link"
+                    ><img
+                      class="img-fluid"
+                      src="img/OutdoorShoots/03.jpg"
+                      alt=""
+                  /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-12 col-md-12 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="row g-3">
+              <div class="col-12">
+                <div class="project-item">
+                  <a
+                    href="img/OutdoorShoots/04.jpg"
+                    data-lightbox="gallery-OutdoorShoots"
+                    class="gallery-link"
+                    ><img
+                      class="img-fluid"
+                      src="img/OutdoorShoots/04.jpg"
+                      alt=""
+                  /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-12 col-md-12 wow fadeInUp" data-wow-delay="0.5s">
+            <div class="row g-3">
+              <div class="col-12">
+                <div class="project-item">
+                  <a
+                    href="img/OutdoorShoots/05.jpg"
+                    data-lightbox="gallery-OutdoorShoots"
+                    class="gallery-link"
+                    ><img
+                      class="img-fluid"
+                      src="img/OutdoorShoots/05.jpg"
+                      alt=""
+                  /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-12 col-md-12 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="row g-3">
+              <div class="col-12">
+                <div class="project-item">
+                  <a
+                    href="img/OutdoorShoots/06.jpg"
+                    data-lightbox="gallery-OutdoorShoots"
+                    class="gallery-link"
+                    ><img
+                      class="img-fluid"
+                      src="img/OutdoorShoots/06.jpg"
+                      alt=""
+                  /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-12 col-md-12 wow fadeInUp" data-wow-delay="0.7s">
+            <div class="row g-3">
+              <div class="col-12">
+                <div class="project-item">
+                  <a
+                    href="img/OutdoorShoots/07.jpg"
+                    data-lightbox="gallery-OutdoorShoots"
+                    class="gallery-link"
+                    ><img
+                      class="img-fluid"
+                      src="img/OutdoorShoots/07.jpg"
+                      alt=""
+                  /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-12 col-md-12 wow fadeInUp" data-wow-delay="0.5s">
+            <div class="row g-3">
+              <div class="col-12">
+                <div class="project-item">
+                  <a
+                    href="img/OutdoorShoots/08.jpg"
+                    data-lightbox="gallery-OutdoorShoots"
+                    class="gallery-link"
+                    ><img
+                      class="img-fluid"
+                      src="img/OutdoorShoots/08.jpg"
+                      alt=""
+                  /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-12 col-md-12 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="row g-3">
+              <div class="col-12">
+                <div class="project-item">
+                  <a
+                    href="img/OutdoorShoots/09.jpg"
+                    data-lightbox="gallery-OutdoorShoots"
+                    class="gallery-link"
+                    ><img
+                      class="img-fluid"
+                      src="img/OutdoorShoots/09.jpg"
+                      alt=""
+                  /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-12 col-md-12 wow fadeInUp" data-wow-delay="0.7s">
+            <div class="row g-3">
+              <div class="col-12">
+                <div class="project-item">
+                  <a
+                    href="img/OutdoorShoots/010.jpg"
+                    data-lightbox="gallery-OutdoorShoots"
+                    class="gallery-link"
+                    ><img
+                      class="img-fluid"
+                      src="img/OutdoorShoots/010.jpg"
+                      alt=""
+                  /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-12 col-md-12 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="row g-3">
+              <div class="col-12">
+                <div class="project-item">
+                  <a
+                    href="img/OutdoorShoots/011.jpg"
+                    data-lightbox="gallery-OutdoorShoots"
+                    class="gallery-link"
+                    ><img
+                      class="img-fluid"
+                      src="img/OutdoorShoots/011.jpg"
+                      alt=""
+                  /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-12 col-md-12 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="row g-3">
+              <div class="col-12">
+                <div class="project-item">
+                  <a
+                    href="img/OutdoorShoots/012.jpg"
+                    data-lightbox="gallery-OutdoorShoots"
+                    class="gallery-link"
+                    ><img
+                      class="img-fluid"
+                      src="img/OutdoorShoots/012.jpg"
+                      alt=""
+                  /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-12 col-md-12 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="row g-3">
+              <div class="col-12">
+                <div class="project-item">
+                  <a
+                    href="img/OutdoorShoots/013.jpg"
+                    data-lightbox="gallery-OutdoorShoots"
+                    class="gallery-link"
+                    ><img
+                      class="img-fluid"
+                      src="img/OutdoorShoots/013.jpg"
+                      alt=""
+                  /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-12 col-md-12 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="row g-3">
+              <div class="col-12">
+                <div class="project-item">
+                  <a
+                    href="img/OutdoorShoots/014.jpg"
+                    data-lightbox="gallery-OutdoorShoots"
+                    class="gallery-link"
+                    ><img
+                      class="img-fluid"
+                      src="img/OutdoorShoots/014.jpg"
+                      alt=""
+                  /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-12 col-md-12 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="row g-3">
+              <div class="col-12">
+                <div class="project-item">
+                  <a
+                    href="img/OutdoorShoots/015.jpg"
+                    data-lightbox="gallery-OutdoorShoots"
+                    class="gallery-link"
+                    ><img
+                      class="img-fluid"
+                      src="img/OutdoorShoots/015.jpg"
+                      alt=""
+                  /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-12 col-md-12 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="row g-3">
+              <div class="col-12">
+                <div class="project-item">
+                  <a
+                    href="img/OutdoorShoots/016.jpg"
+                    data-lightbox="gallery-OutdoorShoots"
+                    class="gallery-link"
+                    ><img
+                      class="img-fluid"
+                      src="img/OutdoorShoots/016.jpg"
+                      alt=""
+                  /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-12 col-md-12 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="row g-3">
+              <div class="col-12">
+                <div class="project-item">
+                  <a
+                    href="img/OutdoorShoots/017.jpg"
+                    data-lightbox="gallery-OutdoorShoots"
+                    class="gallery-link"
+                    ><img
+                      class="img-fluid"
+                      src="img/OutdoorShoots/017.jpg"
+                      alt=""
+                  /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-12 col-md-12 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="row g-3">
+              <div class="col-12">
+                <div class="project-item">
+                  <a
+                    href="img/OutdoorShoots/018.jpg"
+                    data-lightbox="gallery-OutdoorShoots"
+                    class="gallery-link"
+                    ><img
+                      class="img-fluid"
+                      src="img/OutdoorShoots/018.jpg"
+                      alt=""
+                  /></a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -269,40 +474,88 @@
 
     <!-- Footer Start -->
     <!-- Footer (outside main container) -->
-    <footer class="container-fluid bg-dark mt-5 ">
-      <div class="container py-3">   <!-- Reduced padding -->
-        <div class="row g-3 align-items-start"> <!-- Reduced spacing -->
-          
+    <footer class="container-fluid bg-dark mt-5">
+      <div class="container py-3">
+        <!-- Reduced padding -->
+        <div class="row g-3 align-items-start">
+          <!-- Reduced spacing -->
+
           <div class="col-lg-6">
-            <a href="index.html" class="d-inline-block mb-2" style="max-width:140px;">
-              <img src="img/logo.png" alt="Love Studio Logo" class="img-fluid">
+            <a
+              href="index.html"
+              class="d-inline-block mb-2"
+              style="max-width: 140px"
+            >
+              <img
+                src="img/logo.png"
+                alt="Love Studio Logo"
+                class="img-fluid"
+              />
             </a>
-    
+
             <p class="mb-2 fs-6">
               At Love Studio, we specialize in wedding, portrait, and lifestyle
               photography that tells your story in the most authentic way.
             </p>
-    
+
             <ul class="list-unstyled small mb-2">
-              <li class="mb-1"><i class="fa fa-map-marker-alt me-2"></i>Love Studio, No.133, Kamaraj Nagar (South), Lalgudi, Trichy, 621601</li>
-              <li class="mb-1"><i class="fa fa-phone-alt me-2"></i><a href="tel:+919788180713" class="text-decoration-none ">+91 978 818 0713</a></li>
-              <li class="mb-1"><i class="fa fa-envelope me-2"></i><a href="mailto:lovestudio.trichy@gmail.com" class="text-decoration-none ">lovestudio.trichy@gmail.com</a></li>
-              <li><i class="bi bi-instagram me-2"></i><a href="https://www.instagram.com/love.studio.in?igsh=MTJvNzkycHNtM3hrZA==" class="text-decoration-none ">@love_studio</a></li>
+              <li class="mb-1">
+                <i class="fa fa-map-marker-alt me-2"></i>Love Studio, No.133,
+                Kamaraj Nagar (South), Lalgudi, Trichy, 621601
+              </li>
+              <li class="mb-1">
+                <i class="fa fa-phone-alt me-2"></i
+                ><a href="tel:+919788180713" class="text-decoration-none"
+                  >+91 978 818 0713</a
+                >
+              </li>
+              <li class="mb-1">
+                <i class="fa fa-envelope me-2"></i
+                ><a
+                  href="mailto:lovestudio.trichy@gmail.com"
+                  class="text-decoration-none"
+                  >lovestudio.trichy@gmail.com</a
+                >
+              </li>
+              <li>
+                <i class="bi bi-instagram me-2"></i
+                ><a
+                  href="https://www.instagram.com/love.studio.in?igsh=MTJvNzkycHNtM3hrZA=="
+                  class="text-decoration-none"
+                  >@love_studio</a
+                >
+              </li>
             </ul>
           </div>
-    
+
           <div class="col-lg-6">
             <div class="row">
               <div class="col-6">
                 <h6 class="mb-2 fw-bold">Quick Links</h6>
                 <ul class="list-unstyled small">
-                  <li><a class="text-decoration-none " href="about.html">About Us</a></li>
-                  <li><a class="text-decoration-none " href="book-us-now.html">Book Us Now</a></li>
-                  <li><a class="text-decoration-none " href="service.html">Our Services</a></li>
-                  <li><a class="text-decoration-none " href="careers-jobs.html">Job Apply</a></li>
+                  <li>
+                    <a class="text-decoration-none" href="about.html"
+                      >About Us</a
+                    >
+                  </li>
+                  <li>
+                    <a class="text-decoration-none" href="book-us-now.html"
+                      >Book Us Now</a
+                    >
+                  </li>
+                  <li>
+                    <a class="text-decoration-none" href="service.html"
+                      >Our Services</a
+                    >
+                  </li>
+                  <li>
+                    <a class="text-decoration-none" href="careers-jobs.html"
+                      >Job Apply</a
+                    >
+                  </li>
                 </ul>
               </div>
-    
+
               <div class="col-6">
                 <h6 class="mb-2 fw-bold">Popular Links</h6>
                 <ul class="list-unstyled small">
@@ -316,11 +569,11 @@
                       >Candid Photography</a
                     >
                   </li>
-                  <li>
+                  <!-- <li>
                     <a class="text-decoration-none" href="baby-shower.html"
                       >Baby Shower</a
                     >
-                  </li>
+                  </li> -->
                   <li>
                     <a class="text-decoration-none" href="baby-shoots.html"
                       >Baby Shoots</a
@@ -331,12 +584,12 @@
                       >Outdoor Shoots</a
                     >
                   </li>
-                  <li>
+                  <!-- <li>
                     <a class="text-decoration-none" href="indoor-shoots.html"
                       >Indoor Shoots</a
                     >
-                  </li>
-                  
+                  </li> -->
+
                   <li>
                     <a class="text-decoration-none" href="fashion-shoots.html"
                       >Fashion Shoots</a
@@ -346,14 +599,27 @@
               </div>
             </div>
           </div>
-    
         </div>
       </div>
-    
+
       <div class="container border-top border-secondary py-2">
         <div class="row text-center text-md-start small">
-          <div class="col-md-6 mb-1">&copy; <a class="text-primary text-decoration-none" href="https://lovestudio.com">Love Studio</a>. All Rights Reserved.</div>
-          <div class="col-md-6 text-md-end">Designed by <a class="text-primary fw-bold text-decoration-none" href="https://kmoinfotech.com">KMo Infotech</a></div>
+          <div class="col-md-6 mb-1">
+            &copy;
+            <a
+              class="text-primary text-decoration-none"
+              href="https://lovestudio.com"
+              >Love Studio</a
+            >. All Rights Reserved.
+          </div>
+          <div class="col-md-6 text-md-end">
+            Designed by
+            <a
+              class="text-primary fw-bold text-decoration-none"
+              href="https://kmoinfotech.com"
+              >KMo Infotech</a
+            >
+          </div>
         </div>
       </div>
     </footer>
@@ -367,7 +633,11 @@
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
     <script src="lib/wow/wow.min.js"></script>
     <script src="lib/easing/easing.min.js"></script>
     <script src="lib/waypoints/waypoints.min.js"></script>
