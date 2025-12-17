@@ -773,3 +773,26 @@ section,
     height: 80vh;
   }
 }
+
+
+@media (min-width: 1024px) {
+  .project-item img {
+      height: 100vh;
+      width: 100%;
+      object-fit: cover;
+  }
+  .project-item  {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+  }
+  .gallery-link img {
+    height: 100vh;
+    width: auto;
+    object-fit: cover;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+  }
+}
+
